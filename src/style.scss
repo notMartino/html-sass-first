@@ -1,0 +1,56 @@
+$colorTitle: goldenrod;
+$colorBtn: darkorchid;
+
+// Proprietà generali
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkcyan;
+    header{
+        text-align: center;
+        padding: 20px 40px;
+        h1{
+            color: $colorTitle;
+            text-shadow: 0 0 2px black;
+        }
+    }
+
+    main{
+        padding: 20px 40px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        p{
+            color: black;
+            width: 50%;
+            min-width: 200px;
+            background-color: plum;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            padding: 20px;
+        }
+        p.pink{
+            border-radius: 0px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            color:blueviolet;
+            background-color: $colorTitle;
+        }
+        button{
+            background-color: $colorTitle;
+            padding: 10px;
+            border: 1px solid $colorBtn;
+            border-radius: 5px;
+            margin: 20px 0;
+            cursor: pointer;
+            color: $colorBtn;
+        }
+        button:active{
+            background-color: chocolate;
+        }
+    }
+}

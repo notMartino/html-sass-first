@@ -1,1 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: darkcyan;
+}
+body header {
+  text-align: center;
+  padding: 20px 40px;
+}
+body header h1 {
+  color: goldenrod;
+  text-shadow: 0 0 2px black;
+}
+body main {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body main p {
+  color: black;
+  width: 50%;
+  min-width: 200px;
+  background-color: plum;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 20px;
+}
+body main p.pink {
+  border-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: blueviolet;
+  background-color: goldenrod;
+}
+body main button {
+  background-color: goldenrod;
+  padding: 10px;
+  border: 1px solid darkorchid;
+  border-radius: 5px;
+  margin: 20px 0;
+  cursor: pointer;
+  color: darkorchid;
+}
+body main button:active {
+  background-color: chocolate;
+}

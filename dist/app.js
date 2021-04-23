@@ -7,7 +7,19 @@
   \********************/
 /***/ (() => {
 
-alert('Hello World!');
+function kabom() {
+  alert('KABOOOM!');
+}
+
+function init() {
+  setTimeout(function () {
+    alert('Hello World!');
+  }, 500);
+  var btn = document.getElementById('click');
+  btn.addEventListener('click', kabom);
+}
+
+document.addEventListener('DOMContentLoaded', init);
 
 /***/ }),
 
